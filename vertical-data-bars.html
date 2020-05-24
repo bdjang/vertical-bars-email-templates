@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<!-- Enable Microsoft VML -->
+<html lang="en"
+xmlns="http://www.w3.org/1999/xhtml"
+xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+<title></title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width" http-equiv="Content-Type">
+
+<style type="text/css">
+
+    /* CLIENT-SPECIFIC STYLES */
+    body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+    /* Prevent WebKit and Windows mobile changing default text sizes */
+  
+    table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+    /* Remove spacing between tables in Outlook 2007 and up */
+
+    img { -ms-interpolation-mode: bicubic; }
+    /* Allow smoother rendering of resized image in Internet Explorer */
+
+    /* RESET STYLES */
+    img { border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; }
+    table { border-collapse: collapse !important; }
+    body { height: 100% !important; margin: 0 !important; padding: 0 !important; width: 100% !important; }
+
+    /* iOS BLUE LINKS */
+    a[x-apple-data-detectors] {
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+    }
+
+    /* DATA BAR HOVER STATES */
+    .bar-color:hover {
+        background: linear-gradient(to right, #10ed81 0%, #10ed81 100%) !important;
+    }
+    .bar-labels:hover div {
+        color: #000000 !important;
+    }
+
+</style>
+
+<!-- Labels distort vertical data bars in Outlook. Removing them here -->
+<!--[if mso]>
+<style type="text/css">
+    .bar-labels div {
+        display: none !important;
+    }
+</style>
+<![endif]-->
+
+</head>
+
+    <body bgcolor="#ffffff" style="background-color: #ffffff; margin: 0 !important; padding: 0 !important;">
+
+
+        <!-- Basic vertical data bar -->
+        <table width="300" height="300" align="center" style="border: 1px solid #ffffff;">
+            <tr>
+                <td align="center" style="color: #000000; font-size: 14px; font-family: 'Courier New'; font-weight: 600; line-height: 1.5em; padding: 0;">Basic Vertical Data Bar</td>
+            </tr>
+            <tr>
+            <!-- Vertical data bar -->
+                <td valign="bottom" align="center">
+                    <table>
+                       <tr>
+                            <!-- Define the height and width of the vertical data bar at the <td> cell level. This method gets better email client support compared to using padding -->
+                            <td width="30" height="190" style="background-color: #10ed81;"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <!-- end basic vertical data bar -->
+
+        <br /><br />
+
+        <!-- X-axis Data Label -->
+        <table width="300" height="350" align="center" style="border: 1px solid #ffffff;">
+            <tr>
+                <td align="center" style="color: #000000; font-size: 14px; font-family: 'Courier New'; font-weight: 600; line-height: 1.5em; padding: 0;">X-axis Data Label</td>
+            </tr>
+            <tr>
+            <!-- Vertical data bar -->
+                <td valign="bottom" align="center">
+                    <table>
+                        <tr>
+                            <td width="30" height="190" style="background-color: #10ed81;"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- Corresponding label -->
+            <tr>
+                <td align="center" height="10" style="font-size: 12px; font-family: courier; padding: 0 0 10px 0;">2013</td>
+            </tr>
+        </table>
+        <!-- end x-axis data label -->
+
+        <br /><br />
+
+        <!-- Top Data Label -->
+        <table width="300" height="350" align="center" style="border: 1px solid #ffffff;">
+            <tr>
+                <td align="center" style="color: #000000; font-size: 14px; font-family: 'Courier New'; font-weight: 600; line-height: 1.5em; padding: 0;">Top Data Label</td>
+            </tr>
+            <tr>
+                <!-- Vertical data bar -->
+                <td valign="bottom" align="center">
+                    <table>
+                        <!-- Added white-space: nowrap; to stop labels from breaking into two lines -->
+                        <div style="color: #000000; font-family: 'Courier New'; font-size: 12px; line-height: 1.5em; margin: 0; max-width: 30px; padding: 0; white-space: nowrap;">$1,234</div>
+                        <tr>
+                            <td width="30" height="190" style="background-color: #10ed81;"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <!-- end top data label -->
+
+        <br /><br />
+
+        <!-- Bar Graph -->
+        <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="400" height="350" style="border: 1px solid #ffffff;">
+
+            <!-- Bar graph title -->
+            <tr>
+                <td align="center" colspan="8" style="font-family: 'Courier New'; font-size: 18px; font-weight: 600; line-height: 1.5em; margin: 0 0 40px 0; padding: 20px 0 40px 0;">Bar Graph</td>
+            </tr>
+            <!-- end bar graph title -->
+
+            <tr>
+                <!-- Data bar #1 -->
+                <td width="50" valign="bottom" align="center">
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <div style="color: #000000; font-family: 'Courier New'; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 30px; padding: 0; white-space: nowrap;">$4,234</div>
+                        <tr>
+                            <td width="30" height="81" style="background: linear-gradient(to bottom, #10ed81 0%, #0dbd67 100%); background-color: #10ed81; margin: 0; padding: 0;" class="bar-color"></td>
+                        </tr>
+                    </table>
+                </td>
+                <!-- end data bar #1 -->
+                <!-- Data bar #2 -->
+                <td width="50" valign="bottom" align="center">
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <div style="color: #000000; font-family: 'Courier New'; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 30px; padding: 0; white-space: nowrap;">$11,234</div>
+                        <tr>
+                            <td width="30" height="214" style="background: linear-gradient(to bottom, #10ed81 0%, #0dbd67 100%); background-color: #10ed81; margin: 0; padding: 0;" class="bar-color"></td>
+                        </tr>
+                    </table>
+                </td>
+                <!-- end data bar #2 -->
+                <!-- Data bar #3 -->
+                <td width="50" valign="bottom" align="center">
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <div style="color: #000000; font-family: 'Courier New'; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 30px; padding: 0; white-space: nowrap;">$13,123</div>
+                        <tr>
+                            <td width="30" height="250" style="background: linear-gradient(to bottom, #10ed81 0%, #0dbd67 100%); background-color: #10ed81; margin: 0; padding: 0;" class="bar-color"></td>
+                        </tr>
+                    </table>
+                </td>
+                <!-- end data bar #3 -->
+                <!-- Data bar #4 -->
+                <td width="50" valign="bottom" align="center">
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <div style="color: #000000; font-family: 'Courier New'; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 30px; padding: 0; white-space: nowrap;">$7,108</div>
+                        <tr>
+                            <td width="30" height="135" style="background: linear-gradient(to bottom, #10ed81 0%, #0dbd67 100%); background-color: #10ed81; margin: 0; padding: 0;" class="bar-color"></td>
+                        </tr>
+                    </table>
+                </td>
+                <!-- end data bar #4 -->
+                <!-- Data bar #5 -->
+                <td width="50" valign="bottom" align="center">
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <div style="color: #000000; font-family: 'Courier New'; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 30px; padding: 0; white-space: nowrap;">$9,583</div>
+                        <tr>
+                            <td width="30" height="183" style="background: linear-gradient(to bottom, #10ed81 0%, #0dbd67 100%); background-color: #10ed81; margin: 0; padding: 0;" class="bar-color"></td>
+                        </tr>
+                    </table>
+                </td>
+                <!-- end data bar #5 -->
+                <!-- Data bar #6 -->
+                <td width="50" valign="bottom" align="center">
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <div style="color: #000000; font-family: 'Courier New'; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 30px; padding: 0; white-space: nowrap;">$10,019</div>
+                        <tr>
+                            <td width="30" height="191" style="background: linear-gradient(to bottom, #10ed81 0%, #0dbd67 100%); background-color: #10ed81; margin: 0; padding: 0;" class="bar-color"></td>
+                        </tr>
+                    </table>
+                </td>
+                <!-- end data bar #6 -->
+                <!-- Data bar #7 -->
+                <td width="50" valign="bottom" align="center">
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <div style="color: #000000; font-family: 'Courier New'; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 30px; padding: 0; white-space: nowrap;">$9,863</div>
+                        <tr>
+                            <td width="30" height="188" style="background: linear-gradient(to bottom, #10ed81 0%, #0dbd67 100%); background-color: #10ed81; margin: 0; padding: 0;" class="bar-color"></td>
+                        </tr>
+                    </table>
+                </td>
+                <!-- end data bar #7 -->
+                <!-- Data bar #8 -->
+                <td width="50" valign="bottom" align="center">
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <div style="color: #000000; font-family: 'Courier New'; font-weight: 500; font-size: 10px; line-height: 1.5em; margin: 0; max-width: 30px; padding: 0; white-space: nowrap;">$4,566</div>
+                        <tr>
+                            <td width="30" height="87" style="background: linear-gradient(to bottom, #10ed81 0%, #0dbd67 100%); background-color: #10ed81; margin: 0; padding: 0;" class="bar-color"></td>
+                        </tr>
+                    </table>
+                </td>
+                <!-- end data bar #8 -->
+            </tr>
+
+            <!-- X-axis labels -->
+            <tr>
+                <td height="10" style="font-family: 'Courier New'; font-size: 12px; font-weight: 600; line-height: 1.5em; margin: 0; padding: 0 0 10px 0; text-align: center;">2013</td>
+                <td height="10" style="font-family: 'Courier New'; font-size: 12px; font-weight: 600; line-height: 1.5em; margin: 0; padding: 0 0 10px 0; text-align: center;">2014</td>
+                <td height="10" style="font-family: 'Courier New'; font-size: 12px; font-weight: 600; line-height: 1.5em; margin: 0; padding: 0 0 10px 0; text-align: center;">2015</td>
+                <td height="10" style="font-family: 'Courier New'; font-size: 12px; font-weight: 600; line-height: 1.5em; margin: 0; padding: 0 0 10px 0; text-align: center;">2016</td>
+                <td height="10" style="font-family: 'Courier New'; font-size: 12px; font-weight: 600; line-height: 1.5em; margin: 0; padding: 0 0 10px 0; text-align: center;">2017</td>
+                <td height="10" style="font-family: 'Courier New'; font-size: 12px; font-weight: 600; line-height: 1.5em; margin: 0; padding: 0 0 10px 0; text-align: center;">2018</td>
+                <td height="10" style="font-family: 'Courier New'; font-size: 12px; font-weight: 600; line-height: 1.5em; margin: 0; padding: 0 0 10px 0; text-align: center;">2019</td>
+                <td height="10" style="font-family: 'Courier New'; font-size: 12px; font-weight: 600; line-height: 1.5em; margin: 0; padding: 0 0 10px 0; text-align: center;">2020</td>
+            </tr>
+            <!-- end x-axis labels -->
+
+        </table>
+        <!-- end bar graph -->
+
+        <br /><br />
+
+        <!-- Bar Graph Hover Effect -->
+        <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="400" height="350" style="border: 1px solid #ffffff;" class="bar-labels">
+
+            <!-- Bar graph title -->
+            <tr>
+                <td align="center" colspan="8" style="font-family: 'Courier New'; font-size: 18px; font-weight: 600; line-height: 1.5em; margin: 0 0 40px 0; padding: 20px 0 40px 0;">Bar Graph Hover Effect</td>
+            </tr>
+            <!-- end bar graph title -->
+
+            <tr>
+                <!-- Data bar #1 -->
+                <td width="50" valign="bottom" align="center">
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <!-- Data bar label; Added white-space: nowrap to stop labels from splitting into two lines -->
+                        <div style="color: #ffffff; font-family: 'Courier New'; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 30px; padding: 0; white-space: nowrap;">$4,234</div>
+                        <tr>
+                            <!-- Define the height and width of the vertical data bar at the <td> cell level. This method gets better support from more email clients including Outlook DPI -->
+                            <td width="30" height="81" style="background: linear-gradient(to bottom, #10ed81 0%, #0dbd67 100%); background-color: #10ed81; margin: 0; padding: 0;" class="bar-color"></td>
+                        </tr>
+                    </table>
+                </td>
+                <!-- end data bar #1 -->
+                <!-- Data bar #2 -->
+                <td width="50" valign="bottom" align="center">
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <div style="color: #ffffff; font-family: 'Courier New'; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 30px; padding: 0; white-space: nowrap;">$11,234</div>
+                        <tr>
+                            <td width="30" height="214" style="background: linear-gradient(to bottom, #10ed81 0%, #0dbd67 100%); background-color: #10ed81; margin: 0; padding: 0;" class="bar-color"></td>
+                        </tr>
+                    </table>
+                </td>
+                <!-- end data bar #2 -->
+                <!-- Data bar #3 -->
+                <td width="50" valign="bottom" align="center">
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <div style="color: #ffffff; font-family: 'Courier New'; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 30px; padding: 0; white-space: nowrap;">$13,123</div>
+                        <tr>
+                            <td width="30" height="250" style="background: linear-gradient(to bottom, #10ed81 0%, #0dbd67 100%); background-color: #10ed81; margin: 0; padding: 0;" class="bar-color"></td>
+                        </tr>
+                    </table>
+                </td>
+                <!-- end data bar #3 -->
+                <!-- Data bar #4 -->
+                <td width="50" valign="bottom" align="center">
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <div style="color: #ffffff; font-family: 'Courier New'; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 30px; padding: 0; white-space: nowrap;">$7,108</div>
+                        <tr>
+                            <td width="30" height="135" style="background: linear-gradient(to bottom, #10ed81 0%, #0dbd67 100%); background-color: #10ed81; margin: 0; padding: 0;" class="bar-color"></td>
+                        </tr>
+                    </table>
+                </td>
+                <!-- end data bar #4 -->
+                <!-- Data bar #5 -->
+                <td width="50" valign="bottom" align="center">
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <div style="color: #ffffff; font-family: 'Courier New'; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 30px; padding: 0; white-space: nowrap;">$9,583</div>
+                        <tr>
+                            <td width="30" height="183" style="background: linear-gradient(to bottom, #10ed81 0%, #0dbd67 100%); background-color: #10ed81; margin: 0; padding: 0;" class="bar-color"></td>
+                        </tr>
+                    </table>
+                </td>
+                <!-- end data bar #5 -->
+                <!-- Data bar #6 -->
+                <td width="50" valign="bottom" align="center">
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <div style="color: #ffffff; font-family: 'Courier New'; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 30px; padding: 0; white-space: nowrap;">$10,019</div>
+                        <tr>
+                            <td width="30" height="191" style="background: linear-gradient(to bottom, #10ed81 0%, #0dbd67 100%); background-color: #10ed81; margin: 0; padding: 0;" class="bar-color"></td>
+                        </tr>
+                    </table>
+                </td>
+                <!-- end data bar #6 -->
+                <!-- Data bar #7 -->
+                <td width="50" valign="bottom" align="center">
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <div style="color: #ffffff; font-family: 'Courier New'; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 30px; padding: 0; white-space: nowrap;">$9,863</div>
+                        <tr>
+                            <td width="30" height="188" style="background: linear-gradient(to bottom, #10ed81 0%, #0dbd67 100%); background-color: #10ed81; margin: 0; padding: 0;" class="bar-color"></td>
+                        </tr>
+                    </table>
+                </td>
+                <!-- end data bar #7 -->
+                <!-- Data bar #8 -->
+                <td width="50" valign="bottom" align="center">
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                        <div style="color: #ffffff; font-family: 'Courier New'; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 30px; padding: 0; white-space: nowrap;">$4,566</div>
+                        <tr>
+                            <td width="30" height="87" style="background: linear-gradient(to bottom, #10ed81 0%, #0dbd67 100%); background-color: #10ed81; margin: 0; padding: 0;" class="bar-color"></td>
+                        </tr>
+                    </table>
+                </td>
+                <!-- end data bar #8 -->
+            </tr>
+
+            <!-- X-axis labels -->
+            <tr>
+                <td height="10" style="font-family: 'Courier New'; font-size: 12px; font-weight: 600; line-height: 1.5em; margin: 0; padding: 0 0 10px 0; text-align: center;">2013</td>
+                <td height="10" style="font-family: 'Courier New'; font-size: 12px; font-weight: 600; line-height: 1.5em; margin: 0; padding: 0 0 10px 0; text-align: center;">2014</td>
+                <td height="10" style="font-family: 'Courier New'; font-size: 12px; font-weight: 600; line-height: 1.5em; margin: 0; padding: 0 0 10px 0; text-align: center;">2015</td>
+                <td height="10" style="font-family: 'Courier New'; font-size: 12px; font-weight: 600; line-height: 1.5em; margin: 0; padding: 0 0 10px 0; text-align: center;">2016</td>
+                <td height="10" style="font-family: 'Courier New'; font-size: 12px; font-weight: 600; line-height: 1.5em; margin: 0; padding: 0 0 10px 0; text-align: center;">2017</td>
+                <td height="10" style="font-family: 'Courier New'; font-size: 12px; font-weight: 600; line-height: 1.5em; margin: 0; padding: 0 0 10px 0; text-align: center;">2018</td>
+                <td height="10" style="font-family: 'Courier New'; font-size: 12px; font-weight: 600; line-height: 1.5em; margin: 0; padding: 0 0 10px 0; text-align: center;">2019</td>
+                <td height="10" style="font-family: 'Courier New'; font-size: 12px; font-weight: 600; line-height: 1.5em; margin: 0; padding: 0 0 10px 0; text-align: center;">2020</td>
+            </tr>
+            <!-- end x-axis labels -->
+
+        </table>
+        <!-- end bar graph hover effect -->
+
+        <br /><br />
+
+    </body>
+</html>
