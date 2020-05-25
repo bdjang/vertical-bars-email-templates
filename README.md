@@ -34,7 +34,8 @@ The first `<td>` cell is the beginning of the vertical data bar. Place another `
 </table>
 ```
 
-![vertical-databar](https://user-images.githubusercontent.com/6575035/82765330-d979da00-9de3-11ea-8031-0b9b7baa98c3.png)
+![vertical-databar](https://user-images.githubusercontent.com/6575035/82824673-bac52300-9e77-11ea-93bd-797bdb063c7d.png)
+
 
 Repeat that section to create additional vertical data bars:
 
@@ -86,7 +87,7 @@ Add a label underneath the data bar by creating a second `<tr>` element and a `<
 </table>
 ```
 
-![x-axis-label](https://user-images.githubusercontent.com/6575035/82765341-f6aea880-9de3-11ea-90fc-8fd559403e70.png)
+![x-axis-label](https://user-images.githubusercontent.com/6575035/82824707-cadd0280-9e77-11ea-83a3-547decbfade3.png)
 
 You can also add a label right above the vertical bar by using a `<div>` element:
 
@@ -106,7 +107,7 @@ You can also add a label right above the vertical bar by using a `<div>` element
 </table>
 ```
 
-![top-label](https://user-images.githubusercontent.com/6575035/82765355-18a82b00-9de4-11ea-8c45-5536c2d2ed98.png)
+![top-label](https://user-images.githubusercontent.com/6575035/82824725-d6302e00-9e77-11ea-97d7-4372bfcddbb1.png)
 
 The `max-width` CSS property limits the label width to `30px`. This prevents it from expanding the width of the vertical data bar. The `white-space: nowrap` CSS property stops labels from breaking into two lines.
 
