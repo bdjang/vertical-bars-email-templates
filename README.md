@@ -1,6 +1,6 @@
 # Vertical Data Bars in Email Templates
 
-* [Data Bars in Email Templates](https://github.com/bdjang/data-bars-email-templates)
+* [Data Bars in Email Templates](https://github.com/bdjang/data-bars-email-templates#data-bars-in-email-templates)
 
 ## Background
 
@@ -22,7 +22,7 @@ The first `<td>` cell is the beginning of the vertical data bar. Place another `
 ```html
 <table width="300" height="350" align="center">
   <tr>
-	<!-- Vertical data bar -->
+    <!-- Vertical data bar -->
     <td valign="bottom" align="center">
       <table>
         <tr>
@@ -41,7 +41,7 @@ Repeat that section to create additional vertical data bars:
 ```html
 <table width="300" height="350" align="center">
   <tr>
-	<!-- Vertical data bar #1 -->
+    <!-- Vertical data bar #1 -->
     <td valign="bottom" align="center>
       <table>
         <tr>
@@ -70,7 +70,7 @@ Add a label underneath the data bar by creating a second `<tr>` element and a `<
 ```html
 <table width="300" height="350" align="center">
   <tr>
-	<!-- Vertical data bar #1 -->
+    <!-- Vertical data bar #1 -->
     <td valign="bottom" align="center">
       <table>
         <tr>
@@ -93,7 +93,7 @@ You can also add a label right above the vertical bar by using a `<div>` element
 ```html
 <table width="300" height="350" align="center">
   <tr>
-	<!-- Vertical data bar -->
+    <!-- Vertical data bar -->
     <td valign="bottom" align="center">
       <table>
         <div style="font-size: 12px; font-family: 'Courier New'; max-width: 30px; white-space: nowrap;">$1,234</div>
@@ -125,7 +125,7 @@ A simple way to add interactivity to these data bars is by changing the label fo
 ```html
 <table width="300" height="350" align="center" class="bar-labels">
   <tr>
-	<!-- Vertical data bar #1 -->
+    <!-- Vertical data bar #1 -->
     <td valign="bottom" align="center">
       <table>
         <div style="color: #ffffff; font-size: 12px; font-family: 'Courier New'; max-width: 30px; white-space: nowrap;">$1,234</div>
