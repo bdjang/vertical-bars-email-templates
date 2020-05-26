@@ -142,4 +142,4 @@ A simple way to add interactivity to these data bars is by changing the label fo
 
 If your data set can be display through vertical data bars, building this out can be more efficient and effective than using images.
 
-![vertical-bars-hover-effect](https://user-images.githubusercontent.com/6575035/82765363-34133600-9de4-11ea-9442-6626bf745641.gif)
+![vertical-bars-hover-effect](https://user-images.githubusercontent.com/6575035/82849402-c9d2c200-9ec5-11ea-82d3-c2329d785373.gif)
