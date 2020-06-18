@@ -40,7 +40,7 @@ xmlns:o="urn:schemas-microsoft-com:office:office">
     .bar-color:hover {
         background: linear-gradient(to right, #10ed81 0%, #10ed81 100%) !important;
     }
-    .bar-labels:hover div {
+    .bar-labels:hover td {
         color: #000000 !important;
     }
 
@@ -61,7 +61,7 @@ xmlns:o="urn:schemas-microsoft-com:office:office">
 
 
         <!-- Basic vertical data bar -->
-        <table width="300" height="300" align="center" style="border: 1px solid #ffffff;">
+        <table width="300" height="300" align="center" style="border: 1px solid #c4c4c4;">
             <tr>
                 <td align="center" style="color: #000000; font-size: 14px; font-family: 'Courier New'; font-weight: 600; line-height: 1.5em; padding: 0;">Basic Vertical Data Bar</td>
             </tr>
@@ -82,7 +82,7 @@ xmlns:o="urn:schemas-microsoft-com:office:office">
         <br /><br />
 
         <!-- X-axis Data Label -->
-        <table width="300" height="350" align="center" style="border: 1px solid #ffffff;">
+        <table width="300" height="350" align="center" style="border: 1px solid #c4c4c4;">
             <tr>
                 <td align="center" style="color: #000000; font-size: 14px; font-family: 'Courier New'; font-weight: 600; line-height: 1.5em; padding: 0;">X-axis Data Label</td>
             </tr>
@@ -106,7 +106,7 @@ xmlns:o="urn:schemas-microsoft-com:office:office">
         <br /><br />
 
         <!-- Top Data Label -->
-        <table width="300" height="350" align="center" style="border: 1px solid #ffffff;">
+        <table width="300" height="350" align="center" style="border: 1px solid #c4c4c4;">
             <tr>
                 <td align="center" style="color: #000000; font-size: 14px; font-family: 'Courier New'; font-weight: 600; line-height: 1.5em; padding: 0;">Top Data Label</td>
             </tr>
@@ -114,8 +114,10 @@ xmlns:o="urn:schemas-microsoft-com:office:office">
                 <!-- Vertical data bar -->
                 <td valign="bottom" align="center">
                     <table>
-                        <!-- Added text-align: center; white-space: nowrap; to stop labels from breaking into two lines -->
-                        <div style="color: #000000; font-family: 'Courier New'; font-size: 12px; line-height: 1.5em; margin: 0; max-width: 30px; padding: 0; text-align: center; white-space: nowrap;">$1,234</div>
+                        <tr>
+                            <!-- Added text-align: center; white-space: nowrap; to stop labels from breaking into two lines; Changed element from <div> to <td> to accomodate Outlook clients; div was 'falling' into the data bar -->
+                            <td style="color: #000000; font-family: 'Courier New'; font-size: 12px; line-height: 1.5em; margin: 0; max-width: 30px; padding: 0; text-align: center; white-space: nowrap;">$1,234</td>
+                        </tr>
                         <tr>
                             <td width="30" height="190" style="background-color: #10ed81;"></td>
                         </tr>
@@ -128,7 +130,7 @@ xmlns:o="urn:schemas-microsoft-com:office:office">
         <br /><br />
 
         <!-- Bar Graph -->
-        <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="400" height="350" style="border: 1px solid #ffffff;">
+        <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="400" height="350" style="border: 1px solid #c4c4c4;">
 
             <!-- Bar graph title -->
             <tr>
@@ -140,7 +142,9 @@ xmlns:o="urn:schemas-microsoft-com:office:office">
                 <!-- Data bar #1 -->
                 <td width="50" valign="bottom" align="center">
                     <table role="presentation" border="0" cellspacing="0" cellpadding="0">
-                        <div style="color: #000000; font-family: 'Courier New'; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 36px; padding: 0; text-align: center; white-space: nowrap;">$4,234</div>
+                        <tr>
+                            <td style="color: #000000; font-family: 'Courier New'; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 36px; padding: 0; text-align: center; white-space: nowrap;">$4,234</td>
+                        </tr>
                         <tr>
                             <td width="36" height="81" style="background: linear-gradient(to bottom, #10ed81 0%, #0dbd67 100%); background-color: #10ed81; margin: 0; padding: 0;" class="bar-color"></td>
                         </tr>
@@ -150,7 +154,9 @@ xmlns:o="urn:schemas-microsoft-com:office:office">
                 <!-- Data bar #2 -->
                 <td width="50" valign="bottom" align="center">
                     <table role="presentation" border="0" cellspacing="0" cellpadding="0">
-                        <div style="color: #000000; font-family: 'Courier New'; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 36px; padding: 0; text-align: center; white-space: nowrap;">$11,234</div>
+                        <tr>
+                            <td style="color: #000000; font-family: 'Courier New'; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 36px; padding: 0; text-align: center; white-space: nowrap;">$11,234</td>
+                        </tr>
                         <tr>
                             <td width="36" height="214" style="background: linear-gradient(to bottom, #10ed81 0%, #0dbd67 100%); background-color: #10ed81; margin: 0; padding: 0;" class="bar-color"></td>
                         </tr>
@@ -160,7 +166,9 @@ xmlns:o="urn:schemas-microsoft-com:office:office">
                 <!-- Data bar #3 -->
                 <td width="50" valign="bottom" align="center">
                     <table role="presentation" border="0" cellspacing="0" cellpadding="0">
-                        <div style="color: #000000; font-family: 'Courier New'; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 36px; padding: 0; text-align: center; white-space: nowrap;">$13,123</div>
+                        <tr>
+                            <td style="color: #000000; font-family: 'Courier New'; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 36px; padding: 0; text-align: center; white-space: nowrap;">$13,123</td>
+                        </tr>
                         <tr>
                             <td width="36" height="250" style="background: linear-gradient(to bottom, #10ed81 0%, #0dbd67 100%); background-color: #10ed81; margin: 0; padding: 0;" class="bar-color"></td>
                         </tr>
@@ -170,7 +178,9 @@ xmlns:o="urn:schemas-microsoft-com:office:office">
                 <!-- Data bar #4 -->
                 <td width="50" valign="bottom" align="center">
                     <table role="presentation" border="0" cellspacing="0" cellpadding="0">
-                        <div style="color: #000000; font-family: 'Courier New'; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 36px; padding: 0; text-align: center; white-space: nowrap;">$7,108</div>
+                        <tr>
+                            <td style="color: #000000; font-family: 'Courier New'; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 36px; padding: 0; text-align: center; white-space: nowrap;">$7,108</td>
+                        </tr>
                         <tr>
                             <td width="36" height="135" style="background: linear-gradient(to bottom, #10ed81 0%, #0dbd67 100%); background-color: #10ed81; margin: 0; padding: 0;" class="bar-color"></td>
                         </tr>
@@ -180,7 +190,9 @@ xmlns:o="urn:schemas-microsoft-com:office:office">
                 <!-- Data bar #5 -->
                 <td width="50" valign="bottom" align="center">
                     <table role="presentation" border="0" cellspacing="0" cellpadding="0">
-                        <div style="color: #000000; font-family: 'Courier New'; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 36px; padding: 0; text-align: center; white-space: nowrap;">$9,583</div>
+                        <tr>
+                            <td style="color: #000000; font-family: 'Courier New'; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 36px; padding: 0; text-align: center; white-space: nowrap;">$9,583</td>
+                        </tr>
                         <tr>
                             <td width="36" height="183" style="background: linear-gradient(to bottom, #10ed81 0%, #0dbd67 100%); background-color: #10ed81; margin: 0; padding: 0;" class="bar-color"></td>
                         </tr>
@@ -190,7 +202,9 @@ xmlns:o="urn:schemas-microsoft-com:office:office">
                 <!-- Data bar #6 -->
                 <td width="50" valign="bottom" align="center">
                     <table role="presentation" border="0" cellspacing="0" cellpadding="0">
-                        <div style="color: #000000; font-family: 'Courier New'; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 36px; padding: 0; text-align: center; white-space: nowrap;">$10,019</div>
+                        <tr>
+                            <td style="color: #000000; font-family: 'Courier New'; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 36px; padding: 0; text-align: center; white-space: nowrap;">$10,019</td>
+                        </tr>
                         <tr>
                             <td width="36" height="191" style="background: linear-gradient(to bottom, #10ed81 0%, #0dbd67 100%); background-color: #10ed81; margin: 0; padding: 0;" class="bar-color"></td>
                         </tr>
@@ -200,7 +214,9 @@ xmlns:o="urn:schemas-microsoft-com:office:office">
                 <!-- Data bar #7 -->
                 <td width="50" valign="bottom" align="center">
                     <table role="presentation" border="0" cellspacing="0" cellpadding="0">
-                        <div style="color: #000000; font-family: 'Courier New'; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 36px; padding: 0; text-align: center; white-space: nowrap;">$9,863</div>
+                        <tr>
+                            <td style="color: #000000; font-family: 'Courier New'; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 36px; padding: 0; text-align: center; white-space: nowrap;">$9,863</td>
+                        </tr>
                         <tr>
                             <td width="36" height="188" style="background: linear-gradient(to bottom, #10ed81 0%, #0dbd67 100%); background-color: #10ed81; margin: 0; padding: 0;" class="bar-color"></td>
                         </tr>
@@ -210,7 +226,9 @@ xmlns:o="urn:schemas-microsoft-com:office:office">
                 <!-- Data bar #8 -->
                 <td width="50" valign="bottom" align="center">
                     <table role="presentation" border="0" cellspacing="0" cellpadding="0">
-                        <div style="color: #000000; font-family: 'Courier New'; font-weight: 500; font-size: 10px; line-height: 1.5em; margin: 0; max-width: 36px; padding: 0; text-align: center; white-space: nowrap;">$4,566</div>
+                        <tr>
+                            <td style="color: #000000; font-family: 'Courier New'; font-weight: 500; font-size: 10px; line-height: 1.5em; margin: 0; max-width: 36px; padding: 0; text-align: center; white-space: nowrap;">$4,566</td>
+                        </tr>
                         <tr>
                             <td width="36" height="87" style="background: linear-gradient(to bottom, #10ed81 0%, #0dbd67 100%); background-color: #10ed81; margin: 0; padding: 0;" class="bar-color"></td>
                         </tr>
@@ -238,7 +256,7 @@ xmlns:o="urn:schemas-microsoft-com:office:office">
         <br /><br />
 
         <!-- Bar Graph Hover Effect -->
-        <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="400" height="350" style="border: 1px solid #ffffff;" class="bar-labels">
+        <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="400" height="350" style="border: 1px solid #c4c4c4;" class="bar-labels">
 
             <!-- Bar graph title -->
             <tr>
@@ -251,10 +269,12 @@ xmlns:o="urn:schemas-microsoft-com:office:office">
                 <td width="50" valign="bottom" align="center">
                     <table role="presentation" border="0" cellspacing="0" cellpadding="0">
                         <!-- Data bar label; Added white-space: nowrap to stop labels from splitting into two lines -->
-                        <div style="color: #ffffff; font-family: 'Courier New'; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 36px; padding: 0; text-align: center; white-space: nowrap;">$4,234</div>
+                        <tr>
+                            <td style="color: #ffffff; font-family: 'Courier New'; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 36px; padding: 0; text-align: center; white-space: nowrap;">$4,234</td>
+                        </tr>
                         <tr>
                             <!-- Define the height and width of the vertical data bar at the <td> cell level. This method gets better support from more email clients including Outlook DPI -->
-                            <td width="36" height="81" style="background: linear-gradient(to bottom, #10ed81 0%, #0dbd67 100%); background-color: #10ed81; margin: 0; padding: 0;" class="bar-color"></td>
+                            <td width="36" height="81" style="background: linear-gradient(to bottom, #10ed81 0%, #0dbd67 100%); background-color: #10ed81; margin: 0; max-width: 36px; padding: 0;" class="bar-color"></td>
                         </tr>
                     </table>
                 </td>
@@ -262,9 +282,11 @@ xmlns:o="urn:schemas-microsoft-com:office:office">
                 <!-- Data bar #2 -->
                 <td width="50" valign="bottom" align="center">
                     <table role="presentation" border="0" cellspacing="0" cellpadding="0">
-                        <div style="color: #ffffff; font-family: 'Courier New'; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 36px; padding: 0; text-align: center; white-space: nowrap;">$11,234</div>
                         <tr>
-                            <td width="36" height="214" style="background: linear-gradient(to bottom, #10ed81 0%, #0dbd67 100%); background-color: #10ed81; margin: 0; padding: 0;" class="bar-color"></td>
+                            <td style="color: #ffffff; font-family: 'Courier New'; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 36px; padding: 0; text-align: center; white-space: nowrap;">$11,234</td>
+                        </tr>
+                        <tr>
+                            <td width="36" height="214" style="background: linear-gradient(to bottom, #10ed81 0%, #0dbd67 100%); background-color: #10ed81; margin: 0; max-width: 36px; padding: 0;" class="bar-color"></td>
                         </tr>
                     </table>
                 </td>
@@ -272,9 +294,11 @@ xmlns:o="urn:schemas-microsoft-com:office:office">
                 <!-- Data bar #3 -->
                 <td width="50" valign="bottom" align="center">
                     <table role="presentation" border="0" cellspacing="0" cellpadding="0">
-                        <div style="color: #ffffff; font-family: 'Courier New'; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 36px; padding: 0; text-align: center; white-space: nowrap;">$13,123</div>
                         <tr>
-                            <td width="36" height="250" style="background: linear-gradient(to bottom, #10ed81 0%, #0dbd67 100%); background-color: #10ed81; margin: 0; padding: 0;" class="bar-color"></td>
+                            <td style="color: #ffffff; font-family: 'Courier New'; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 36px; padding: 0; text-align: center; white-space: nowrap;">$13,123</td>
+                        </tr>
+                        <tr>
+                            <td width="36" height="250" style="background: linear-gradient(to bottom, #10ed81 0%, #0dbd67 100%); background-color: #10ed81; margin: 0; max-width: 36px; padding: 0;" class="bar-color"></td>
                         </tr>
                     </table>
                 </td>
@@ -282,9 +306,11 @@ xmlns:o="urn:schemas-microsoft-com:office:office">
                 <!-- Data bar #4 -->
                 <td width="50" valign="bottom" align="center">
                     <table role="presentation" border="0" cellspacing="0" cellpadding="0">
-                        <div style="color: #ffffff; font-family: 'Courier New'; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 36px; padding: 0; text-align: center; white-space: nowrap;">$7,108</div>
                         <tr>
-                            <td width="36" height="135" style="background: linear-gradient(to bottom, #10ed81 0%, #0dbd67 100%); background-color: #10ed81; margin: 0; padding: 0;" class="bar-color"></td>
+                            <td style="color: #ffffff; font-family: 'Courier New'; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 36px; padding: 0; text-align: center; white-space: nowrap;">$7,108</td>
+                        </tr>
+                        <tr>
+                            <td width="36" height="135" style="background: linear-gradient(to bottom, #10ed81 0%, #0dbd67 100%); background-color: #10ed81; margin: 0; max-width: 36px; padding: 0;" class="bar-color"></td>
                         </tr>
                     </table>
                 </td>
@@ -292,9 +318,11 @@ xmlns:o="urn:schemas-microsoft-com:office:office">
                 <!-- Data bar #5 -->
                 <td width="50" valign="bottom" align="center">
                     <table role="presentation" border="0" cellspacing="0" cellpadding="0">
-                        <div style="color: #ffffff; font-family: 'Courier New'; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 36px; padding: 0; text-align: center; white-space: nowrap;">$9,583</div>
                         <tr>
-                            <td width="36" height="183" style="background: linear-gradient(to bottom, #10ed81 0%, #0dbd67 100%); background-color: #10ed81; margin: 0; padding: 0;" class="bar-color"></td>
+                            <td style="color: #ffffff; font-family: 'Courier New'; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 36px; padding: 0; text-align: center; white-space: nowrap;">$9,583</td>
+                        </tr>
+                        <tr>
+                            <td width="36" height="183" style="background: linear-gradient(to bottom, #10ed81 0%, #0dbd67 100%); background-color: #10ed81; margin: 0; max-width: 36px; padding: 0;" class="bar-color"></td>
                         </tr>
                     </table>
                 </td>
@@ -302,9 +330,11 @@ xmlns:o="urn:schemas-microsoft-com:office:office">
                 <!-- Data bar #6 -->
                 <td width="50" valign="bottom" align="center">
                     <table role="presentation" border="0" cellspacing="0" cellpadding="0">
-                        <div style="color: #ffffff; font-family: 'Courier New'; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 36px; padding: 0; text-align: center; white-space: nowrap;">$10,019</div>
                         <tr>
-                            <td width="36" height="191" style="background: linear-gradient(to bottom, #10ed81 0%, #0dbd67 100%); background-color: #10ed81; margin: 0; padding: 0;" class="bar-color"></td>
+                            <td style="color: #ffffff; font-family: 'Courier New'; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 36px; padding: 0; text-align: center; white-space: nowrap;">$10,019</td>
+                        </tr>
+                        <tr>
+                            <td width="36" height="191" style="background: linear-gradient(to bottom, #10ed81 0%, #0dbd67 100%); background-color: #10ed81; margin: 0; max-width: 36px; padding: 0;" class="bar-color"></td>
                         </tr>
                     </table>
                 </td>
@@ -312,9 +342,11 @@ xmlns:o="urn:schemas-microsoft-com:office:office">
                 <!-- Data bar #7 -->
                 <td width="50" valign="bottom" align="center">
                     <table role="presentation" border="0" cellspacing="0" cellpadding="0">
-                        <div style="color: #ffffff; font-family: 'Courier New'; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 36px; padding: 0; text-align: center; white-space: nowrap;">$9,863</div>
                         <tr>
-                            <td width="36" height="188" style="background: linear-gradient(to bottom, #10ed81 0%, #0dbd67 100%); background-color: #10ed81; margin: 0; padding: 0;" class="bar-color"></td>
+                            <td style="color: #ffffff; font-family: 'Courier New'; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 36px; padding: 0; text-align: center; white-space: nowrap;">$9,863</td>
+                        </tr>
+                        <tr>
+                            <td width="36" height="188" style="background: linear-gradient(to bottom, #10ed81 0%, #0dbd67 100%); background-color: #10ed81; margin: 0; max-width: 36px; padding: 0;" class="bar-color"></td>
                         </tr>
                     </table>
                 </td>
@@ -322,9 +354,11 @@ xmlns:o="urn:schemas-microsoft-com:office:office">
                 <!-- Data bar #8 -->
                 <td width="50" valign="bottom" align="center">
                     <table role="presentation" border="0" cellspacing="0" cellpadding="0">
-                        <div style="color: #ffffff; font-family: 'Courier New'; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 36px; padding: 0; text-align: center; white-space: nowrap;">$4,566</div>
                         <tr>
-                            <td width="36" height="87" style="background: linear-gradient(to bottom, #10ed81 0%, #0dbd67 100%); background-color: #10ed81; margin: 0; padding: 0;" class="bar-color"></td>
+                            <td style="color: #ffffff; font-family: 'Courier New'; font-weight: 500; font-size: 11px; line-height: 1.5em; margin: 0; max-width: 36px; padding: 0; text-align: center; white-space: nowrap;">$4,566</td>
+                        </tr>
+                        <tr>
+                            <td width="36" height="87" style="background: linear-gradient(to bottom, #10ed81 0%, #0dbd67 100%); background-color: #10ed81; margin: 0; max-width: 36px; padding: 0;" class="bar-color"></td>
                         </tr>
                     </table>
                 </td>
