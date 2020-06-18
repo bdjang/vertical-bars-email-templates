@@ -88,7 +88,7 @@ Add a label underneath the data bar by creating a second `<tr>` element and a `<
 
 ![x-axis-label](https://user-images.githubusercontent.com/6575035/82826202-acc4d180-9e7a-11ea-902d-9f2ec2abe4e0.jpg)
 
-You can also add a label right above the vertical bar by using a `<div>` element:
+You can also place a label right above the vertical bar by adding another `<tr>` and `<td>` element:
 
 ```html
 <table width="300" height="350" align="center">
@@ -96,7 +96,10 @@ You can also add a label right above the vertical bar by using a `<div>` element
     <!-- Vertical data bar -->
     <td valign="bottom" align="center">
       <table>
-        <div style="font-size: 12px; font-family: 'Courier New'; max-width: 30px; white-space: nowrap;">$1,234</div>
+        <!-- Top label -->
+        <tr>
+          <td style="font-family: 'Courier New'; font-size: 12px; max-width: 30px; white-space: nowrap;">$1,234</td>
+        </tr>
         <tr>
           <td width="30" height="150" style="background-color: #10ed81;"></td>
         </tr>
@@ -116,7 +119,7 @@ A simple way to add interactivity to these data bars is by changing the label fo
 
 ```css
 <style type="text/css">
-  .bar-labels:hover div {
+  .bar-labels:hover td {
     color: #000000 !important;
   }
 </style>
@@ -128,7 +131,9 @@ A simple way to add interactivity to these data bars is by changing the label fo
     <!-- Vertical data bar #1 -->
     <td valign="bottom" align="center">
       <table>
-        <div style="color: #ffffff; font-size: 12px; font-family: 'Courier New'; max-width: 30px; white-space: nowrap;">$1,234</div>
+        <tr>
+          <td style="color: #ffffff; font-family: 'Courier New'; font-size: 12px; max-width: 30px; white-space: nowrap;">$1,234</td>
+        </tr>
         <tr>
           <td width="30" height="150" style="background-color: #10ed81;"></td>
         </tr>
