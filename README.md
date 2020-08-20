@@ -42,7 +42,7 @@ Repeat that section to create additional vertical data bars:
 <table width="300" height="350" align="center">
   <tr>
     <!-- Vertical data bar #1 -->
-    <td valign="bottom" align="center>
+    <td valign="bottom" align="center">
       <table>
         <tr>
           <td width="30" height="150" style="background-color: #10ed81;"></td>
@@ -50,7 +50,7 @@ Repeat that section to create additional vertical data bars:
       </table>
     </td>
     <!-- Vertical data bar #2 -->
-    <td valign="bottom" align="center>
+    <td valign="bottom" align="center">
       <table>
         <tr>
           <td width="30" height="180" style="background-color: #10ed81;"></td>
