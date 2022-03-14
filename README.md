@@ -88,6 +88,27 @@ Add a label underneath the data bar by creating a second `<tr>` element and a `<
 
 ![x-axis-label](https://user-images.githubusercontent.com/6575035/82826202-acc4d180-9e7a-11ea-902d-9f2ec2abe4e0.jpg)
 
+If you want to keep the label in the same `<table>` parent element, you can move the `<td>` cell below the vertical databar. Add the `max-width` property and set it to the value of the vertical databar's width. This prevents the databar from expanding due to the text label's length.
+
+```html
+<table width="300" height="350" align="center">
+  <tr>
+    <!-- Vertical data bar #1 -->
+    <td valign="bottom" align="center">
+      <table>
+        <tr>
+          <td width="30" height="150" style="background-color: #10ed81;"></td>
+        </tr>
+        <!-- Corresponding label -->
+        <tr>
+          <td align="center" height="10" style="font-size: 12px; font-family: 'Courier New'; max-width: 30px; padding: 0 0 10px 0;">2013</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+```
+
 You can also place a label right above the vertical bar by adding another `<tr>` and `<td>` element:
 
 ```html
